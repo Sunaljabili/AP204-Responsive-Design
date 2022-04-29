@@ -1,0 +1,79 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+#trending .card {
+  position: relative;
+}
+
+#trending .card:hover .icons ul li {
+  opacity: 1;
+}
+
+#trending .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#trending .card:hover .card-body p {
+  color: red;
+}
+
+#trending .card:hover .card-body del {
+  color: yellow;
+}
+
+#trending .card .img {
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#trending .card .img:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#trending .card .icons {
+  position: absolute;
+  left: 16%;
+  bottom: 23%;
+  cursor: pointer;
+}
+
+#trending .card .icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#trending .card .icons ul li {
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  list-style: none;
+}
+
+#trending .card .icons ul li:hover i {
+  background-color: red;
+  color: white;
+}
+
+#trending .card .icons ul li i {
+  font-size: 22px;
+  padding: 10px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) and (min-width: 450px) {
+  .card {
+    text-align: center;
+  }
+  .card .card-body p {
+    font-size: 32px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
